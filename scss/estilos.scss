@@ -1,0 +1,62 @@
+@import "base/mixins";
+@import "utilities/mediasQ";
+@import "base/extend";
+@import "utilities/variables";
+
+.rutina{
+    @include section
+}
+.rutinaok{
+    @include rutinaok
+}
+.mainInicio{
+    @include mainInicio;
+    @extend .master;
+    @extend .fontColor;
+   
+}
+h2{
+    @include H2;
+    @extend .subTitulo;
+}
+h3{
+    @include H3
+}
+body{
+    background-color: $color-body;
+    @include cuerpo (100,800);
+    min-height: 100vh;
+    position: relative;
+
+}
+.imagen{
+    @include imagen
+}
+.item-fixed{
+    @include Whatsapp
+}
+.nosotros{
+    @extend .fontColor;
+}
+.contenedor{
+    @include contenedor;
+}
+.padre{
+    @include padre;
+}
+.reserva{
+    @extend .fontColor;
+    text-align: center;
+}
+.claseForm{
+    @extend .alCentro;
+}
+.fielform div{
+    @extend .alCentro; 
+}
+.parrafo{
+    @extend .alCentro;
+}
+footer{
+    @extend .estiloFooter;
+}

@@ -1,0 +1,171 @@
+h1 {
+  color: yellow;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 60px;
+  font-weight: 500;
+  font-family: 'Bebas Neue', cursive; }
+
+@media (max-width: 480px) {
+  .imagen {
+    background-color: #cf4cd4;
+    grid-template-columns: 1fr; } }
+
+@media (max-width: 480px) {
+  .crossfit {
+    grid-template-columns: 1, 1fr;
+    padding: 10px;
+    margin: 10; } }
+
+@media (max-width: 480px) {
+  .rutina {
+    background-color: #4c61d4;
+    grid-template-columns: 1fr; }
+  .rutinaok {
+    padding: 0px; } }
+
+.master, .mainInicio {
+  font-family: 'verdana', Times, bold;
+  font-size: 30px; }
+
+.bodyFondo {
+  background-color: black; }
+
+.fontColor, .rutinaok, .mainInicio, .nosotros, .reserva {
+  color: #3D0000;
+  font-size: 1.5rem; }
+
+.subTitulo, h2 {
+  color: #950101;
+  font-size: 2rem; }
+
+.alCentro, .claseForm, .fielform div, .parrafo {
+  text-align: center;
+  font-size: 2rem;
+  padding: 15px; }
+
+.estiloFooter, footer {
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  color: white;
+  text-align: center; }
+
+footer {
+  grid-area: "footer"; }
+
+.table1 {
+  background-color: #041C32;
+  font-size: 1.5rem;
+  padding: 5%; }
+
+.table2 {
+  background-color: #04293A;
+  font-size: 1.3rem;
+  padding: 5%; }
+
+.table3 {
+  background-color: #064663;
+  font-size: 1.3rem;
+  padding: 5%; }
+
+.table4 {
+  background-color: #ECB365;
+  font-size: 1.3rem;
+  padding: 5%; }
+
+.crossfit {
+  height: 600px;
+  display: grid;
+  grid-template-columns: 1, 3fr;
+  grid-template-rows: 1, 3fr;
+  justify-items: center;
+  align-items: center; }
+
+.rutina {
+  font-size: 1.5rem;
+  text-align: center;
+  text-shadow: bisque;
+  /* border: 5px solid black; */
+  margin: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: "rutina1"  "rutina2"; }
+
+.rutinaok {
+  padding-left: 20px;
+  padding-right: 20px;
+  grid-area: "rutina";
+  border: 5px black;
+  text-shadow: 1px 1px #fff; }
+
+.mainInicio {
+  /*  font-size: 1rem; */
+  padding: 1rem;
+  text-align: center;
+  /* border: 5px solid black; */
+  margin: 5px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+
+h2 {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 5% solid #950101;
+  border-radius: 10px; }
+
+h3 {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 5% solid #090a09;
+  border-radius: 10px; }
+
+body {
+  background-color: black;
+  width: 100;
+  height: 800;
+  min-height: 100vh;
+  position: relative; }
+
+.imagen {
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: "imagen";
+  margin: 5px;
+  padding: 5px; }
+
+.item-fixed {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  height: 80px;
+  width: 80px; }
+
+.contenedor {
+  padding-bottom: 50px;
+  display: grid;
+  font-size: 2rem;
+  color: #3D0000;
+  gap: 1rem;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  grid-template-areas: "main"  "footer ";
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif; }
+
+.padre {
+  margin-top: 10px;
+  padding: 10px;
+  text-align: center;
+  display: grid;
+  height: 40vh;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 0.4fr 0.3fr 0.3fr 0.3fr;
+  grid-template-areas: "sucursales"  "dias"  "horarios";
+  gap: 5px; }
+
+.reserva {
+  text-align: center; }

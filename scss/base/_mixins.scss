@@ -1,0 +1,115 @@
+
+h1{
+    color: yellow;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 60px;
+    font-weight: 500;
+    font-family: 'Bebas Neue', cursive;
+    
+}
+@mixin cuerpo ($width, $height){
+    width: $width;
+    height: $height;
+}
+    
+@mixin contenedor{
+    padding-bottom: 50px;
+    display: grid;
+    font-size: 2rem;
+    color: #3D0000;
+    gap: 1rem;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:    "main" 
+                            "footer ";
+    text-align:center;
+    font-family:Arial, Helvetica, sans-serif; 
+    
+}
+@mixin padre{
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+    display: grid;
+    height: 40vh;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.4fr 0.3fr 0.3fr 0.3fr;
+    grid-template-areas:    "sucursales" 
+                            "dias" 
+                            "horarios";
+    gap: 5px;
+ 
+} 
+    
+
+
+@mixin section{
+    font-size: 1.5rem;
+    text-align:center;
+    text-shadow: bisque;
+    /* border: 5px solid black; */
+    margin: 10px; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas:    "rutina1" 
+                            "rutina2";
+
+}
+
+@mixin rutinaok{
+    @extend .fontColor;
+    padding-left: 20px ;
+    padding-right: 20px ;
+    grid-area: "rutina";
+    border: 5px black;
+    text-shadow: 1px 1px #fff;
+} 
+    
+@mixin mainInicio{
+    @extend .fontColor;
+   /*  font-size: 1rem; */
+    padding: 1rem;
+    text-align: center;
+    /* border: 5px solid black; */
+    margin: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+ } 
+ @mixin H2 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 5% solid#950101;
+    border-radius: 10px;
+    
+}
+     
+@mixin H3 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 5% solid rgb(9, 10, 9);
+    border-radius: 10px;
+    
+}
+@mixin imagen{
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "imagen";
+    margin: 5px;
+    padding: 5px; 
+}
+@mixin Whatsapp{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    height: 80px;
+    width: 80px;
+} 
+    
+
+    
+ 
+    
+ 
+    

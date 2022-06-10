@@ -1,0 +1,28 @@
+
+@media (max-width: 480px){
+    .imagen{
+        background-color:rgb(207, 76, 212);
+        grid-template-columns: 1fr;
+        
+            } 
+        }
+
+@media (max-width: 480px){
+            .crossfit{
+                grid-template-columns: (1, 1fr);
+                padding: 10px;
+                margin: 10;
+        
+            }
+        }
+
+@media (max-width: 480px){
+            .rutina{
+                background-color:rgb(76, 97, 212);
+                grid-template-columns: 1fr;          
+            }
+        
+            .rutinaok{
+                padding: 0px;
+            }
+        }

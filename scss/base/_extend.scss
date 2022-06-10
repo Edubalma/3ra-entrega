@@ -1,0 +1,33 @@
+.master{
+    font-family:'verdana', Times, bold;
+    font-size: 30px;
+}
+.bodyFondo{
+    background-color: black;
+}
+
+.fontColor{
+    color: #3D0000;
+    font-size: 1.5rem;
+}
+.subTitulo{
+    color:#950101;
+    font-size: 2rem;
+}
+.alCentro{
+    text-align: center;
+    font-size: 2rem;
+    padding: 15px;
+}
+.estiloFooter{
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    color: white;
+    text-align: center;
+}
+footer{
+    grid-area: "footer";
+}

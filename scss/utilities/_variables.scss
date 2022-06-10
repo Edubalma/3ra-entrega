@@ -1,0 +1,31 @@
+$color-body:black;
+
+.table1{
+    background-color: #041C32;
+    font-size: 1.5rem;
+    padding: 5%;
+}
+.table2{
+    background-color: #04293A;
+    font-size: 1.3rem;
+    padding: 5%;
+}
+.table3{
+    background-color:#064663;
+    font-size: 1.3rem;
+    padding: 5%;
+}
+.table4{
+    background-color:#ECB365;
+    font-size: 1.3rem;
+    padding: 5%;
+}
+
+.crossfit{
+    height: 600px;
+    display: grid;
+    grid-template-columns:(1, 3fr) ;
+    grid-template-rows:(1, 3fr);
+    justify-items: center;
+    align-items: center;
+}
