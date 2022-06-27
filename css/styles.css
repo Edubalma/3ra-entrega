@@ -3,13 +3,12 @@ h1 {
   text-align: center;
   text-decoration: underline;
   font-size: 60px;
-  font-weight: 500;
+  font-weight: 500px;
   font-family: 'Bebas Neue', cursive; }
 
-@media (max-width: 480px) {
-  .imagen {
-    background-color: #cf4cd4;
-    grid-template-columns: 1fr; } }
+@media (min-width: 600px) {
+  .navbar {
+    text-align: right; } }
 
 @media (max-width: 480px) {
   .crossfit {
@@ -19,10 +18,16 @@ h1 {
 
 @media (max-width: 480px) {
   .rutina {
+    margin: 10px;
+    padding: 0px;
     background-color: #4c61d4;
     grid-template-columns: 1fr; }
   .rutinaok {
-    padding: 0px; } }
+    display: none; }
+  .navbar {
+    text-align: center; }
+  H1 {
+    display: none; } }
 
 .master, .mainInicio {
   font-family: 'verdana', Times, bold;
@@ -32,17 +37,18 @@ h1 {
   background-color: black; }
 
 .fontColor, .rutinaok, .mainInicio, .nosotros, .reserva {
-  color: #3D0000;
+  color: #53d8b0;
   font-size: 1.5rem; }
 
 .subTitulo, h2 {
-  color: #950101;
+  color: #ada15b;
   font-size: 2rem; }
 
-.alCentro, .claseForm, .fielform div, .parrafo {
+.alCentro, .claseForm, .fieldform div, .parrafo {
+  width: 100%;
   text-align: center;
-  font-size: 2rem;
-  padding: 15px; }
+  font-size: 1,5rem;
+  padding: 10px; }
 
 .estiloFooter, footer {
   background-color: black;
@@ -57,21 +63,25 @@ footer {
   grid-area: "footer"; }
 
 .table1 {
+  color: black;
   background-color: #041C32;
   font-size: 1.5rem;
   padding: 5%; }
 
 .table2 {
+  color: black;
   background-color: #04293A;
   font-size: 1.3rem;
   padding: 5%; }
 
 .table3 {
+  color: black;
   background-color: #064663;
   font-size: 1.3rem;
   padding: 5%; }
 
 .table4 {
+  color: black;
   background-color: #ECB365;
   font-size: 1.3rem;
   padding: 5%; }
@@ -88,7 +98,6 @@ footer {
   font-size: 1.5rem;
   text-align: center;
   text-shadow: bisque;
-  /* border: 5px solid black; */
   margin: 10px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   display: grid;
@@ -100,28 +109,26 @@ footer {
   padding-left: 20px;
   padding-right: 20px;
   grid-area: "rutina";
-  border: 5px black;
-  text-shadow: 1px 1px #fff; }
+  border: 5px black; }
 
 .mainInicio {
-  /*  font-size: 1rem; */
   padding: 1rem;
   text-align: center;
-  /* border: 5px solid black; */
   margin: 5px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
 
 h2 {
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  border: 5% solid #950101;
   border-radius: 10px; }
 
 h3 {
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border: 5% solid #090a09;
-  border-radius: 10px; }
+  border-radius: 10px;
+  color: #ada15b;
+  background-color: #167e5f; }
 
 body {
   background-color: black;
@@ -139,16 +146,21 @@ body {
 
 .item-fixed {
   position: fixed;
-  bottom: 30px;
-  right: 30px;
+  bottom: 50px;
+  right: 30px; }
+
+.item-fixed-img {
   height: 80px;
-  width: 80px; }
+  width: 70px;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 30px; }
 
 .contenedor {
   padding-bottom: 50px;
   display: grid;
   font-size: 2rem;
-  color: #3D0000;
+  color: #53d8b0;
   gap: 1rem;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr;
@@ -161,11 +173,10 @@ body {
   padding: 10px;
   text-align: center;
   display: grid;
-  height: 40vh;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1.5fr);
   grid-template-rows: 0.4fr 0.3fr 0.3fr 0.3fr;
-  grid-template-areas: "sucursales"  "dias"  "horarios";
+  grid-template-areas: "sucursal"  "dias"  "horarios";
   gap: 5px; }
 
 .reserva {
-  text-align: center; }
+  /*     text-align: center; */ }

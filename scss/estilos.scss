@@ -35,6 +35,9 @@ body{
 .item-fixed{
     @include Whatsapp
 }
+.item-fixed-img{
+    @include WhatsappImg
+}
 .nosotros{
     @extend .fontColor;
 }
@@ -46,12 +49,12 @@ body{
 }
 .reserva{
     @extend .fontColor;
-    text-align: center;
+/*     text-align: center; */
 }
 .claseForm{
     @extend .alCentro;
 }
-.fielform div{
+.fieldform div{
     @extend .alCentro; 
 }
 .parrafo{

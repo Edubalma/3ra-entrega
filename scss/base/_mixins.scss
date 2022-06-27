@@ -4,7 +4,7 @@ h1{
     text-align: center;
     text-decoration: underline;
     font-size: 60px;
-    font-weight: 500;
+    font-weight: 500px;
     font-family: 'Bebas Neue', cursive;
     
 }
@@ -17,7 +17,7 @@ h1{
     padding-bottom: 50px;
     display: grid;
     font-size: 2rem;
-    color: #3D0000;
+    color: #53d8b0;
     gap: 1rem;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
@@ -32,23 +32,19 @@ h1{
     padding: 10px;
     text-align: center;
     display: grid;
-    height: 40vh;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1.5fr);
     grid-template-rows: 0.4fr 0.3fr 0.3fr 0.3fr;
-    grid-template-areas:    "sucursales" 
+    grid-template-areas:    "sucursal" 
                             "dias" 
                             "horarios";
     gap: 5px;
  
 } 
-    
-
 
 @mixin section{
     font-size: 1.5rem;
     text-align:center;
     text-shadow: bisque;
-    /* border: 5px solid black; */
     margin: 10px; 
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: grid;
@@ -65,22 +61,18 @@ h1{
     padding-right: 20px ;
     grid-area: "rutina";
     border: 5px black;
-    text-shadow: 1px 1px #fff;
 } 
     
 @mixin mainInicio{
     @extend .fontColor;
-   /*  font-size: 1rem; */
     padding: 1rem;
     text-align: center;
-    /* border: 5px solid black; */
     margin: 5px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
  } 
  @mixin H2 {
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    border: 5% solid#950101;
     border-radius: 10px;
     
 }
@@ -90,7 +82,8 @@ h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     border: 5% solid rgb(9, 10, 9);
     border-radius: 10px;
-    
+    color: #ada15b;
+    background-color: #167e5f;
 }
 @mixin imagen{
     grid-template-columns: repeat(1, 1fr);
@@ -101,11 +94,16 @@ h1{
 }
 @mixin Whatsapp{
     position: fixed;
-    bottom: 30px;
+    bottom: 50px;;
     right: 30px;
-    height: 80px;
-    width: 80px;
 } 
+@mixin WhatsappImg {
+    height: 80px;
+    width: 70px;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 30px;
+}
     
 
     
